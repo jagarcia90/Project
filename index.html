@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+  <title>Chill Zone</title>
+</head>
+
+<body>
+  <div class="wrapper d-flex flex-column align-items-center justify-content-center">
+    <h1 class="display-4 text-center w-100 title-font">
+      <i class="fas fa-smile-wink w-100"></i> Chill Zone</h1>
+    <p class="lead text-center title-font">The Weed You Need</p>
+  </div>
+
+  <div class="container">
+    <!-- Random Strain Generator -->
+    <div class="row wrapper">
+      <div class="col-lg-4 col-sm-12 d-flex align-items-center ">
+        <div class="card" data-aos="zoom-in">
+          <div class="card-header">
+            <h3>Get A Random Strain</h3>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <form id="strainSearchForm">
+              <div class="form-group">
+                <label>Search By</label>
+                <select class="form-control" id="searchChoice" onchange="searchOptions()">
+                  <option id="toDisable">Options</option>
+                  <option value="race">Race</option>
+                  <option value="effects">Effects</option>
+                  <option value="flavors">Flavors</option>
+                </select>
+              </div>
+              <div class="form-group" id="specificSearch">
+              </div>
+            </form>
+            <button class="btn btn-success" id="getData">Submit</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 col-sm-12 d-flex align-items-center">
+        <div class="card w-100" data-aos="zoom-in">
+          <div class="card-header" id="strainName">
+            <h1 style="color:rgba(0,0,0,0)">Hi</h1>
+          </div>
+          <div class="card-body empty-body" id="strainResults">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Search for Nearby Eateries -->
+    <div class="row mt-5 wrapper">
+      <div class="col-lg-12 col-sm-12 d-flex align-items-center">
+        <div class="card w-100" data-aos="zoom-in">
+          <div class="card-header">
+            Got the munchies? Here are some open restaurants near you.
+          </div>
+          <!-- <button type="button" class="btn btn-primary btn-sm" id="pos">Find your location</button>-->
+          <div id="map" class="mt-2 h-100 placeholder">
+          </div>
+        </div>
+
+        <!-- Put form here -->
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="row mt-5 wrapper">
+    <div class="col-lg-2">
+      <!-- Negative Space -->
+      <div class="negative-space h-100">
+
+      </div>
+      <div class="col-lg-8">
+        <section id="video"></section>
+        <!-- <main></main> -->
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <!-- Negative Space -->
+        <div class="negative-space h-100">
+
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-2">
+    <!-- Negative Space -->
+    <div class="negative-space h-100">
+
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAyDxKF-GXfmzdRfmSVkUHLdCJs3s_jmI&libraries=places&opennow&callback=initMap"
+    async defer></script>
+  <script src="assets/javascript/strainSearch.js"></script>
+  <script src="assets/javascript/maps.js"></script>
+  <script src="assets/javascript/video.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

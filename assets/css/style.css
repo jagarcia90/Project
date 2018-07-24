@@ -1,0 +1,78 @@
+html, body {
+	width: 100%;
+	height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background: linear-gradient(270deg, #16d4a3, #d42516, #254277, #dde722, #a522e7);
+	background-size: 600% 600%;
+	-webkit-animation: Gradient 120s ease infinite;
+	-moz-animation: Gradient 120s ease infinite;
+	animation: Gradient 120s ease infinite;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+.title-font {
+    font-family: 'Righteous', cursive;
+}
+	
+    
+@-webkit-keyframes Gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes Gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes Gradient { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+th {
+    font-weight: bold;
+}
+
+.empty-body {
+    min-height: 300px;
+}
+
+
+
+.jumbotron {
+    background: rgba(0, 97, 23, .8);
+    background: linear-gradient(rgba(0,97,23,.8), rgba(0, 168, 0, .5));
+    color: white;
+}
+
+.placeholder {
+    background: lime;
+    border: 2px solid black;
+    min-height: 300px;
+}
+
+/*maps-api*/
+.negative-space {
+    /* background: rgba(255,255,255,.2);
+    border: 1px solid white; */
+}
+
+#map {
+    height: 100%;
+}
+
+#video {
+    height:100%;
+    width:100%;
+}
+
